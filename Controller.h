@@ -28,6 +28,7 @@ public:
 	~Controller();
 
 	void addPosition(Position * movements, Behaviour *beh);
+	void addBehaviour(Behaviour* beh);
 	Position* getPosition();
 
 	int execute();

@@ -33,6 +33,10 @@ void Controller::addPosition(Position* pos, Behaviour *beh) {
 	currentBehaviours.push_back(beh);
 }
 
+void Controller::addBehaviour(Behaviour* beh) {
+	currentBehaviours.push_back(beh);
+}
+
 Position* Controller::getPosition() {
 	return position;
 }

@@ -16,6 +16,7 @@
 #include "MaxYawMinPitch.h"
 #include "MinYawMaxPitch.h"
 #include "MinYawMinPitch.h"
+#include "Sound.h"
 
 extern std::vector<Behaviour*> previousBehaviours;
 
@@ -29,6 +30,7 @@ int main(int argc, char* argv[]) {
 	MaxYawMinPitch xynp;
 	MinYawMaxPitch nyxp;
 	MinYawMinPitch nynp;
+	Sound sd;
 
 	SUtilityDec sud;
 	PUtilityDec pud;
@@ -40,6 +42,7 @@ int main(int argc, char* argv[]) {
 	sq.reset();
 
 	pl.addChild(&sq);
+	pl.addChild(&sd);
 	pl.reset();
 	
 	sud.setChild(&sq);
@@ -78,7 +81,8 @@ void executeBehaviours(std::string input) {
 	std::vector<Behaviour*>::iterator itr = previousBehaviours.begin();
 	while(itr != previousBehaviours.end()) {
 		Behaviour* behaviour = *itr;
-		int result = (input.find("f") == std::string::npos) ? behaviour->executeP(status::success) : behaviour->executeP(status::failure);
+		int result = !(GetKeyState('F') & 0x8000) ? behaviour->executeP(status::success) : behaviour->executeP(status::failure);
+		//int result = (input.find("f") == std::string::npos) ? behaviour->executeP(status::success) : behaviour->executeP(status::failure);
 		itr++;
 	}
 	previousBehaviours.clear();

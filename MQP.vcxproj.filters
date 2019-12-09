@@ -150,6 +150,9 @@
     <ClCompile Include="MinYawMaxPitch.cpp">
       <Filter>Source Files\Behaviours</Filter>
     </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -225,6 +228,9 @@
       <Filter>Header Files\Behaviours</Filter>
     </ClInclude>
     <ClInclude Include="MinYawMaxPitch.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
       <Filter>Header Files\Behaviours</Filter>
     </ClInclude>
   </ItemGroup>

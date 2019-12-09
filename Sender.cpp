@@ -26,10 +26,11 @@ std::string Sender::recieveMessage(std::string input) {
 	char data[256];
 	data[255] = '\0';
 	std::cout << "Waiting for Message" << std::endl;
-	while (result == -1 && !(GetKeyState('R') & 0x8000)) {//&& input.find("w") != std::string::npos) {
+	/*while (result == -1 && !(GetKeyState('R') & 0x8000)) {//&& input.find("w") != std::string::npos) {
 		//result = serial.ReadData(data, DATA_SIZE);
 		Sleep(1000/7.5/4);
-	}
+	}*/
+	Sleep(1000);
 	std::string str(data);
 	return str;
 }
