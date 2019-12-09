@@ -13,6 +13,8 @@
 #ifndef SUTILITYDEC_H
 #define SUTILITYDEC_H
 
+#include <Windows.h>
+
 #include "Node.h"
 #include "UtilityDec.h"
 

@@ -36,7 +36,7 @@ int BehaviourTree::executeC() {
  @return The status
 */
 int BehaviourTree::executeP(int stat) {
-	std::cout << "Call Beahviour Tree Root" << std::endl;
+	std::cout << "Call Behaviour Tree Root" << std::endl;
 	return root->executeC();
 }
 

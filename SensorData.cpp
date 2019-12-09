@@ -9,10 +9,9 @@ Position SensorData::currentPosition = data_pos;
  @param cY The current Y position
  @param cZ The current Z position
 */
-SensorData::SensorData(double cX, double cY, double cZ) {
-	currentPosition.setXPosition(cX);
-	currentPosition.setYPosition(cY);
-	currentPosition.setZPosition(cZ);
+SensorData::SensorData(double ya, double pit) {
+	currentPosition.setYawPosition(ya);
+	currentPosition.setPitchPosition(pit);
 }
 
 /**

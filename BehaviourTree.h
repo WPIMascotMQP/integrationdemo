@@ -27,8 +27,10 @@ public:
 	int executeP(int stat);
 
 	void setRoot(Node *nod);
+
 private:
-	Node *root;
+	Node* root;
+
 };
 
 #endif

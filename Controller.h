@@ -17,6 +17,7 @@
 #include <string>
 #include <vector>
 
+#include "Behaviour.h"
 #include "Movement.h"
 #include "SensorData.h"
 
@@ -26,10 +27,13 @@ public:
 	Controller();
 	~Controller();
 
-	void addMovements(std::vector<Movement*> *movements);
+	void addPosition(Position * movements, Behaviour *beh);
+	Position* getPosition();
+
 	int execute();
 protected:
-	std::vector<std::vector<Movement*>*> movementsList;
+	std::vector<Position*> positions;
+	Position* position;
 	static SensorData data;
 
 };

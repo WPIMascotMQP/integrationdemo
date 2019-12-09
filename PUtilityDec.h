@@ -13,6 +13,8 @@
 #ifndef PUTILITYDEC_H
 #define PUTILITYDEC_H
 
+#include <Windows.h>
+
 #include "Node.h"
 #include "UtilityDec.h"
 

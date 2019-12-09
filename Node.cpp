@@ -1,5 +1,6 @@
 #include "Node.h"
 
+#include "BehaviourTree.h"
 #include "Calculator.h"
 #include "Controller.h"
 #include "SensorData.h"
@@ -10,6 +11,8 @@ SensorData dat_node;
 SensorData Node::data = dat_node;
 Controller con_node;
 Controller Node::controller = con_node;
+BehaviourTree bt_node;
+BehaviourTree Node::tree = bt_node;
 
 /**
  CONSTRUCTOR
@@ -80,4 +83,12 @@ Controller Node::getController() {
 */
 SensorData Node::getSensorData() {
 	return data;
+}
+
+/**
+ Get the static behaviour Tree
+ @return The behaviour tree
+*/
+BehaviourTree Node::getBehaviourTree() {
+	return tree;
 }

@@ -20,6 +20,7 @@
 
 #include "Node.h"
 #include "Action.h"
+#include "Position.h"
 
 class Movement;
 
@@ -28,13 +29,13 @@ public:
 	Behaviour();
     ~Behaviour();
 
-	int executeC();
-	int executeP(int stat);
-	void end();
+	virtual int executeC();
+	virtual int executeP(int stat);
 	std::vector<Movement*> generateMovements();
 
 protected:
 	std::vector<Action*> actions;
+	Position* position;
 	
 };
 #endif

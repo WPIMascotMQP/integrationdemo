@@ -27,6 +27,7 @@ Calculator::~Calculator() {
 */
 std::vector<Movement*> *Calculator::generateMovements(std::vector<Action*> actions, Behaviour *beh) {
 	std::vector<Movement*> *movements = new std::vector<Movement*>();
+	/*
 	std::vector<Action*>::iterator act_itr;
 	Position *pos = &Position(data.getCurrentPosition()->getXPosition(), data.getCurrentPosition()->getYPosition(), data.getCurrentPosition()->getZPosition());
 	// For each action generate a movement based on the last one
@@ -49,5 +50,6 @@ std::vector<Movement*> *Calculator::generateMovements(std::vector<Action*> actio
 		pos->setYPosition(newY);
 		pos->setZPosition(newZ);
 	}
+	*/
 	return movements;
 }

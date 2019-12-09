@@ -111,15 +111,6 @@
     <ClCompile Include="Utility.cpp">
       <Filter>Source Files\BehaviourTreeObjects\CompositeNodes</Filter>
     </ClCompile>
-    <ClCompile Include="MoveUpRight.cpp">
-      <Filter>Source Files\Behaviours</Filter>
-    </ClCompile>
-    <ClCompile Include="MoveFrontLeft.cpp">
-      <Filter>Source Files\Behaviours</Filter>
-    </ClCompile>
-    <ClCompile Include="MoveBackDown.cpp">
-      <Filter>Source Files\Behaviours</Filter>
-    </ClCompile>
     <ClCompile Include="ActionUpRight.cpp">
       <Filter>Source Files\Actions</Filter>
     </ClCompile>
@@ -140,6 +131,24 @@
     </ClCompile>
     <ClCompile Include="PUtilityDec.cpp">
       <Filter>Source Files\Decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialClass.cpp">
+      <Filter>Source Files\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="Sender.cpp">
+      <Filter>Source Files\Processing</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxYawMaxPitch.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="MinYawMinPitch.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxYawMinPitch.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="MinYawMaxPitch.cpp">
+      <Filter>Source Files\Behaviours</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,15 +188,6 @@
     <ClInclude Include="Utility.h">
       <Filter>Header Files\BehaviourTreeObjects\CompositeNodes</Filter>
     </ClInclude>
-    <ClInclude Include="MoveUpRight.h">
-      <Filter>Header Files\Behaviours</Filter>
-    </ClInclude>
-    <ClInclude Include="MoveFrontLeft.h">
-      <Filter>Header Files\Behaviours</Filter>
-    </ClInclude>
-    <ClInclude Include="MoveBackDown.h">
-      <Filter>Header Files\Behaviours</Filter>
-    </ClInclude>
     <ClInclude Include="ActionUpRight.h">
       <Filter>Header Files\Actions</Filter>
     </ClInclude>
@@ -208,6 +208,24 @@
     </ClInclude>
     <ClInclude Include="PUtilityDec.h">
       <Filter>Header Files\Decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialClass.h">
+      <Filter>Header Files\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="Sender.h">
+      <Filter>Header Files\Processing</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxYawMaxPitch.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="MinYawMinPitch.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxYawMinPitch.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="MinYawMaxPitch.h">
+      <Filter>Header Files\Behaviours</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

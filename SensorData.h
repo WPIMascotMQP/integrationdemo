@@ -19,8 +19,8 @@
 
 class SensorData {
 public:
-	SensorData(double cX, double cY, double cZ);
-	SensorData() : SensorData(0.0, 0.0, 0.0) {};
+	SensorData::SensorData(double ya, double pit);
+	SensorData() : SensorData(0.0, 0.0) {};
 	~SensorData();
 
 	std::string getInput();

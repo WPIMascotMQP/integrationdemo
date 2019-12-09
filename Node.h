@@ -18,6 +18,7 @@
 #include <string>
 #include <vector>
 
+class BehaviourTree;
 class Calculator;
 class Controller;
 class SensorData;
@@ -35,10 +36,12 @@ public:
 	Calculator getCalculator();
 	Controller getController();
 	SensorData getSensorData();
+	BehaviourTree getBehaviourTree();
 
 	static Controller controller;
 	static Calculator calculator;
 	static SensorData data;
+	static BehaviourTree tree;
 
 protected:
 	int status;

@@ -22,32 +22,29 @@
 class Position {
 
 public:
-	Position(double x, double y, double z);
-	Position() : Position(0.0, 0.0, 0.0) {};
+	Position(double ya, double pit);
+	Position() : Position(0.0, 0.0) {};
 	~Position();
 
-	void setXPosition(double x);
-	void setYPosition(double y);
-	void setZPosition(double z);
-	double getXPosition();
-	double getYPosition();
-	double getZPosition();
+	void setYawPosition(double ya);
+	void setPitchPosition(double pit);
+	double getYawPosition();
+	double getPitchPosition();
 
 	bool operator==(const Position& pos2) {
-		return (x_position == pos2.x_position) &&
-			(y_position == pos2.y_position) &&
-			(z_position == pos2.z_position);
+		return (yaw_position == pos2.yaw_position) &&
+			(pitch_position == pos2.pitch_position);
 	};
 
 	friend std::ostream& operator<< (std::ostream& out, Position& pos) {
 		char output[50];
-		sprintf_s(output, "( %5.2f, %5.2f, %5.2f)", pos.getXPosition(), pos.getYPosition(), pos.getZPosition());
+		sprintf_s(output, "( %5.2f, %5.2f)", pos.getYawPosition(), pos.getPitchPosition());
 		out << output;
 		return out;
 	}
 private:
-	double x_position;
-	double y_position;
-	double z_position;
+	double yaw_position;
+	double pitch_position;
+
 };
 #endif
